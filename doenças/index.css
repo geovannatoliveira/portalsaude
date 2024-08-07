@@ -1,0 +1,22 @@
+img{
+    margin: 0;
+    height: 100px;
+    width: 300;
+}
+
+body{
+    margin: 0;
+}
+
+
+a:link{
+text-decoration: none;
+font-family: monospace;
+
+
+}
+
+a:hover{
+    text-decoration: underline;
+ 
+}
