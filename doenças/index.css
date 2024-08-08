@@ -1,22 +1,127 @@
-img{
-    margin: 0;
-    height: 100px;
-    width: 300;
-}
 
+section {
+    background-image: url("./gradiente.avif");
+    background-repeat: no-repeat;
+    background-size: 1000px;
+}
+ 
+.fundo{
+    width: 1500px;
+    height: 700px;
+}
+ 
+.logo{
+    width: 300px;
+    height: 30x;
+}
+ 
+.fotoperfil{
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+   
+}
 body{
     margin: 0;
-}
-
-
-a:link{
-text-decoration: none;
-font-family: monospace;
-
-
-}
-
-a:hover{
-    text-decoration: underline;
  
 }
+ 
+a{
+    text-decoration: none;
+    margin-left: 40px;
+   
+    font-size: 30px;
+ 
+}
+ 
+ 
+.botao{
+    border: solid 1px rgb(5, 179, 135);
+    border-radius: 20px;
+    color: rgb(0, 255, 191);
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    font-family:monospace ;
+    font-size: 30px;
+}
+.botao:hover{
+    background-color: #00796B;
+    color: #FFFFFF;
+    transform: scale(1.2)
+}
+ 
+ 
+.container{
+    display: flex;
+    align-items: center;
+}
+ 
+.perfil{
+    border: solid 1px blue;
+    border-radius: 100%;
+    color: rgb(0, 255, 191);
+    background-color: white;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    margin-left: 0;
+    margin-right: 10px;
+    padding-left: 0;
+    padding-top: 0;
+   padding-right: 80px;
+   padding-bottom: 80px;
+ 
+   
+    width: 80px;
+    height: 80px;
+}
+ 
+.perfil:hover{
+    background-color: rgb(0, 0, 0);
+    color: rgb(0, 255, 115);
+    transform: scale(1.2)
+}
+ 
+.distperfil{
+   
+    margin-left: 600px;
+    margin-right: 10px;
+    font-family: monospace;
+    font-size: 20px;
+
+}
+ 
+#divbusca{
+    background-color: #05b9a4;
+    border:solid 1px;
+    border-radius:5px;
+    width:500px;
+    margin-left: 140px;
+   
+  }
+ 
+  #txtbusca{
+    float: left;
+    background-color:transparent;
+    padding-left:5px;
+    font-style:italic;
+    font-size:18px;
+    border:none;
+    height:32px;
+    width:260px;
+   
+  }
+ 
+  .lupaimg{
+    height: 30px;
+    margin-left: 200px;
+  }
+ 
+.medicos{
+    width: 500px;
+    height: 470px;
+    margin-top: 20px;
+    margin-left: 200px;
+    align-items: center;
+}
+ 
+
+ 
