@@ -14,6 +14,42 @@
 <button><a href="./index.html">Voltar</a></button>
 <p class="cor">Selecione a Doença/Problema:</p>
 
+<p>
+    Nós temos <span id="contador">0</span> Tópicos
+</p>
+
+
+<button onclick="aumentar()">
+    Aumentar
+</button>
+
+<button onclick="diminuir()">
+    Diminuir
+</button>
+
+
+<script>
+    let contador = 0;
+    const limiteMinimo = 0;
+    const limiteMaximo = 12;
+
+    function aumentar() {
+        if (contador < limiteMaximo) 
+            contador++;
+
+        document.getElementById("contador").innerText = contador;
+        
+    }
+
+    function diminuir() {
+        if (contador > limiteMinimo) 
+            contador--;
+
+        document.getElementById("contador").innerText = contador;
+        
+    }
+</script>
+
 <p><a href="./ansiedade.html"> Ansiedade</a></p>
 <p><a href="./autismo.html"> Autismo</a></p>
 <p><a href="./bipolaridade.html"> Bipolaridade</a></p>
