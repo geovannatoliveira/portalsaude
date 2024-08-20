@@ -10,6 +10,11 @@
         Cadastro médico
     </H1>
     <form onsubmit="enviaFormulario (event)">
+
+        <input placeholder="Digite seu CPF" name="CPF">
+        <br>
+        <input placeholder="Digite seu E-MAIL" name="E-MAIL">
+        <br>
         <input placeholder="Digite seu Nome" name="nome">
         <br>
         <input placeholder="Digite sua Senha" name="senha"> 
@@ -34,6 +39,8 @@
 
             //criar a estrutura do objeto vazio
             const medico = {
+                CPF: "",
+                E-MAIL: "",
                 nome: "",
                 senha: "",
                 CRM: "",
@@ -43,6 +50,10 @@
             }
 
             //Atribuir dados ao objeto
+            medico.CPF = e.target.CPF.value;
+
+            medico.E-MAIL = e.target.E-MAIL.value;
+
             medico.nome = e.target.nome.value;
 
             medico.senha = e.target.senha.value;
@@ -55,6 +66,9 @@
 
             medico.Nascimento = e.target.Nascimento.value;
     
+            console.log (medico.CPF);
+
+            console.log (medico.E-MAIL);
 
             console.log (medico.nome);
 
