@@ -27,7 +27,29 @@
     </div>
 
     <img class="medicos" src="./Um médico atendendo  (1).jpg"/>
+
+    <div class="aumento_medico_posicao">
+
+        <p>Médicos cadastrados: <span id="numero_medicos">0</span></p>
+        
+
+    </div>
+    <button class="aumento_botao_posicao" onclick="aumentar_medicos()">.</button>
+    <script>
+        let contador = 0;
+
+        function aumentar_medicos(){
+
+        contador++;
+        console.log(contador)
+        document.getElementById("numero_medicos").innerHTML = contador;
+}
+    </script>
+
     </section>
+
+    
+
 
     <!--  validar depois os links  -->
 
