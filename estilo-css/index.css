@@ -12,8 +12,9 @@
 
 }
 
-section {
-    background-image: url("./gradiente.avif");
+section{
+
+    background-image: url("/imagens/gradiente2.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
