@@ -5,60 +5,71 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tópicos</title>
-    <link rel="stylesheet" href="./topicos.css"/>
+    <link rel="stylesheet" href="./estilo css/topicos.css"/>
 </head>
 <body>
+
+    <div class="container"> 
+<div>
+
+    <h1>Tópicos</h1>
     
-<h1>Tópicos</h1>
-<hr>
-<button><a href="./index.html">Voltar</a></button>
-<p class="cor">Selecione a Doença/Problema:</p>
+</div>
 
-<p>
-    Nós temos <span id="contador">0</span> Tópicos
-</p>
+    <p class="distperfil">Perfil</p><button type="button" class="perfil">
+    <img src="./imagens/user1.png" class="fotoperfil"></button>
+
+</div>
+
+<section class="fundo">
+    
+<div class="wrapper">
+
+    <button class="slide_from_right botao wrapper centro"><a href="./index.html">Voltar</a></button>
+
+</div>
+
+<p class="cor selecione">Selecione a Doença/Problema:</p>
+
+<div>
+
+    <a href="./ansiedade.html" class="btn2"> Ansiedade</a>
+    <a href="./autismo.html" class="btn2"> Autismo</a>
+    <a href="./bipolaridade.html" class="btn2"> Bipolaridade</a>
+    <a href="./depressão.html" class="btn2"> Depressão</a>
+
+</div>
 
 
-<button onclick="aumentar()">
-    Aumentar
-</button>
+<div class="classebaixo">
 
-<button onclick="diminuir()">
-    Diminuir
-</button>
+    <a href="./ezquizofrenia.html" class="btn2"> Ezquizofrenia</a>
+    <a href="./toc.html" class="btn2"> Transtorno Obsessivo-Compulsivo</a>
+
+</div>
+
+<div class="classebaixo">
+
+    <p><a href="./tb.html" class="btn2"> Transtorno de Boderline</a></p>
+
+</div>
+
+<div class="classebaixo">
+
+    <p><a href="./tept.html" class="btn2"> Transtorno de Estresse Pós-Traumático</a></p>
+
+</div>
 
 
-<script>
-    let contador = 0;
-    const limiteMinimo = 0;
-    const limiteMaximo = 12;
+<div class="classebaixo">
 
-    function aumentar() {
-        if (contador < limiteMaximo) 
-            contador++;
+    <p><a href="./dpq.html" class="btn2"> Dependência Química</a></p>
 
-        document.getElementById("contador").innerText = contador;
-        
-    }
+</div>
 
-    function diminuir() {
-        if (contador > limiteMinimo) 
-            contador--;
+</section>
 
-        document.getElementById("contador").innerText = contador;
-        
-    }
-</script>
 
-<p><a href="./ansiedade.html"> Ansiedade</a></p>
-<p><a href="./autismo.html"> Autismo</a></p>
-<p><a href="./bipolaridade.html"> Bipolaridade</a></p>
-<p><a href="./depressão.html"> Depressão</a></p>
-<p><a href="./ezquizofrenia.html"> Ezquizofrenia</a></p>
-<p><a href="./toc.html"> Transtorno Obsessivo-Compulsivo</a></p>
-<p><a href="./tb.html"> Transtorno de Boderline</a></p>
-<p><a href="./tept.html"> Transtorno de Estresse Pós-Traumático</a></p>
-<p><a href="./dpq.html"> Dependência Química</a></p>
 
 
 
