@@ -31,11 +31,12 @@ section{
 .logo{
     width: 300px;
     height: 30x;
+    
 }
  
 .fotoperfil{
-    width: 80px;
-    height: 80px;
+    width: 85px;
+    height: 85px;
     border-radius: 100%;
    
 }
@@ -60,6 +61,8 @@ a{
     transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
     font-family:monospace ;
     font-size: 30px;
+    white-space: nowrap;
+    
 }
 .botao:hover{
     background-color: #00796B;
@@ -71,6 +74,7 @@ a{
 .container{
     display: flex;
     align-items: center;
+    gap: 1px;
 }
  
 .perfil{
@@ -83,8 +87,8 @@ a{
     margin-right: 10px;
     padding-left: 0;
     padding-top: 0;
-    padding-right: 80px;
-    padding-bottom: 80px;
+    padding-right: 85px;
+    padding-bottom: 85px;
  
    
     width: 80px;
@@ -99,10 +103,11 @@ a{
  
 .distperfil{
    
-    margin-left: 600px;
+    margin-left: 328px;
     margin-right: 10px;
     font-family: monospace;
     font-size: 20px;
+    margin-right: 10px;
 
 }
  
@@ -139,6 +144,7 @@ a{
     margin-left: 340px;
     margin-right: 10px;
     align-items: center;
+    border-radius: 50px;
 }
 
 .textopag{
@@ -156,7 +162,7 @@ a{
 
 .textocor{
 
-    color: rgb(0, 255, 115);
+    color: rgb(255, 255, 255);
 }
  
 .botaolupa{
@@ -169,4 +175,52 @@ a{
     
 }
 
- 
+.ajuste{
+
+    margin-left: 207px;
+}
+
+.bg {
+    width: 100%;
+    height: 100vh;
+   
+    align-items:center;
+    justify-content:center;
+    background-size: 300% 300%;
+    background-image: linear-gradient(-45deg, rgb(0, 252, 126) 0%, rgb(0, 255, 170) 25%, rgb(0, 255, 106) 51%, #35aeff 100%);
+    -webkit-animation: AnimateBG 20s ease infinite;
+    animation: AnimateBG 20s ease infinite;
+    position: absolute;
+    z-index: -1;
+    
+  }
+  
+  @-webkit-keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+.content{
+
+    
+  position: relative;
+  z-index: 1;
+}
